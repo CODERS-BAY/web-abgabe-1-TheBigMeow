@@ -2,6 +2,7 @@ body {
     background-color: #429EA6;
 }
 h1 {
+    margin: 0cm;
     background-color: darkgrey;
     color: darkmagenta;
 }
@@ -19,3 +20,14 @@ em {
 #spezial {
     color: blueviolet;
 }
+.Linzeins {
+    background-color: coral;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    <list-style: border-image: ;;
+  }

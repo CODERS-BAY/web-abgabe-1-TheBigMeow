@@ -1,10 +1,14 @@
 body {
     background-color: #429EA6;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 h1 {
-    margin: 0cm;
+    margin: 10px;
     background-color: darkgrey;
     color: darkmagenta;
+    text-align: center;
 }
 
 em {
@@ -29,5 +33,23 @@ em {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    <list-style: border-image: ;;
+    
   }
+
+.Navigation ul {
+    background-color: crimson;
+    margin: 0;
+    padding: 0;
+}
+
+.Navigation ul li {
+ display: inline;
+margin: 10px;
+font-size: 20px;
+text-decoration: none;
+}
+
+.Navigation ul li a {
+
+   text-decoration: none;
+   }

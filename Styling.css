@@ -51,12 +51,20 @@ h1 {
 
 }
     
+.rund {
+    object-fit: cover;
+    object-position: 100% 0;
+    border-radius: 100%;
+    width: 15em;
+    height: 15em;
+   }
   
 
 .Navigation ul {
     background-color: 	#cd2626;
     margin: 0;
     padding: 0;
+    color: white;
 }
 
 .Navigation ul li {
@@ -74,3 +82,4 @@ text-decoration: none;
    .footer{
        text-align: center;
    }
+

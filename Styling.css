@@ -24,6 +24,26 @@ h1 {
 }
 
 
+
+.customheader{
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.background-sunny {
+    background-image: url('Bilder/sunny.jpg');
+}
+
+.background-Strohhut {
+    background-image: url('Bilder/Strohhut.jpg');
+}
+
 @media screen and (max-width: 720px) {
     .row {
         display: block;

@@ -79,6 +79,19 @@ h1 {
     height: 15em;
    }
   
+.crewpic {
+    height: 260px;
+    width: 180px;
+    
+}
+.crewform {
+    margin: 50px 70px;
+}
+
+.centercrew {
+    display: block;
+    text-align: center;
+}
 
 .Navigation ul {
     background-color: 	#cd2626;

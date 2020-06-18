@@ -7,7 +7,7 @@ body {
 }
 h1 {
     margin: 10px;
-    background-color: darkgrey;
+    background-color: white;
     color: 	#cd2626;
     text-align: center;
 }
@@ -24,7 +24,6 @@ h1 {
 }
 
 
-
 .customheader{
     height: 100vh;
     overflow: hidden;
@@ -35,6 +34,9 @@ h1 {
     background-repeat: no-repeat;
     background-position: 0 0;
 }
+.background-eoda {
+    background-image: url('Bilder/eoda.jpg');
+}
 
 .background-sunny {
     background-image: url('Bilder/sunny.jpg');
@@ -42,6 +44,9 @@ h1 {
 
 .background-Strohhut {
     background-image: url('Bilder/Strohhut.jpg');
+}
+.background-teufel {
+    background-image: url('Bilder/teufel.jpg');
 }
 
 @media screen and (max-width: 720px) {
@@ -63,6 +68,33 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     
+}
+
+.centerone {
+    display: block;
+    margin-left: 15%;
+
+}
+
+.centeronehalf {
+    display: block;
+    margin-left: 25%;
+}
+.centeronehalftwo {
+    display: block;
+    margin-left: 5%;
+}
+
+.centertwo {
+    display: block;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.centerthree {
+    display: block;
+    margin-right: 10px;
+    margin-left: 15% ;
 }
 
 .shadow {
@@ -96,7 +128,7 @@ h1 {
 .Navigation ul {
     background-color: 	#cd2626;
     margin: 0;
-    padding: 0;
+    padding: 15px;
     color: white;
 }
 

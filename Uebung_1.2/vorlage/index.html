@@ -3,12 +3,15 @@
 <html lang="de">  <!--Lokalisierung/Seitensprache-->
 
 <head> <!--Html Kopf, sieht der Benutzer nicht-->
-  <meta charset="UTF-8"> <!--Zeichensatz-->
-  <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Verhindert dass der Browser automatisch die Seite skalliert-->
-  <meta name="description" content="HTML und CSS sind die Basis aller Webseiten"> <!--Kurze Beschreibung v. Seiteninhalt-->
-  <title>HTML und CSS</title> <!--Seitentitel-->
+  <meta charset="UTF-8"> <!--Zeichensatz bom -> führt zu Fehler-->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!--skalliert die Seite für das Handy| Skalliert auf 1-->
+  <meta name="description" content="HTML und CSS sind die Basis aller Webseiten"> <!--Suchmaschinen Optiemierung, Beschreibung v. Seite-->
+  <title>HTML und CSS</title> <!--Seitentitel eine der wichtigsten Angaben-->
+  <meta name="robozs" content="noindex, nofollow"> <!--Wird nicht in Suchmaschine gelistet-->
   <link rel="stylesheet" href="stil.css"> <!--Eingebundene CSS-->
 </head>
+<!--Character entities 
+<br> Zeilenumbruch, muss man nicht schließen-->
 
 <body> <!--Sichtbarer Bereich/Inhalt-->
   <header> <!--Kopfzeile, soll auf jeder Seite gleich bleiben-->
@@ -17,6 +20,31 @@
         <li><a href="index.html" class="aktuell">Home</a></li> <!--li = Element einer Liste. a = Link. href = wo der Link hin verweist. class = CSS Klasse-->
         <li><a href="infos.html">Infos</a></li>
       </ul>
+      <!--ul oder ol müssen mit li (Element v. Liste) verbunden werden!!!!-->
+
+      <h3>Liste</h3>
+      <ol start="3"> <!-- startte bei der nummerierung bei 3. Funktioniert auch mit A-Z Listen können verschachtelt werden. Müssen in einem Element bleiben-->
+        <li>Liste</li>
+        <li>Liste</li> 
+      </ol>
+
+      <h3>Definitionslisten</h3>
+<dl>
+<dt>Definitionsbegriff</dt>
+<dd>Definition Data1</dd>
+<dd>Definition Data2</dd>
+<dd>Definition Data3</dd>
+<dd>Definition Data</dd>
+<dt>Definitions Term</dt>
+<dd>Definition Data</dd>
+<dd>Definition Data</dd>
+<dd>Definition Data</dd>
+
+<!-- <hr> horizontal rule = macht eine horizontale Linie semantisch und logische Teilung v Inhalten-->
+
+</dl>
+
+
     </nav> 
     <h1>HTML und CSS</h1> <!--Hauptüberschrift, darf nur 1x pro Dokument verwendet werden-->
   </header>
@@ -37,15 +65,17 @@
     </article>
     <article> <!--Textgruppe-->
       <h2>CSS</h2> <!--zweite Hauptüberschrift-->
+      <blockquote cite="https://creative-web.work">
+      <p>Bin ja fjflsaj</p></blockquote> <!--für die semantik verweis auf andere Seite, Suchmaschine-->
       <p> <!--Absatz-->
         CSS bezeichnet das Computerspiel "Counter Strike" und könnte auch für "Chaos siegt sicher" stehen. In unserem
         Zusammenhang bedeutet die Abkürzung aber Cascading Style Sheets (englische Aussprache [kæsˌkeɪdɪŋˈstaɪlʃiːts];
         für gestufte Gestaltungsbögen)</p>
-      <p> <!--Absatz-->
+      <p> <pre><!--Mit pre werden größere Leerzeichen und undschöne Textformatierungen sichtbar-->
         CSS ist eine Stylesheet-Sprache für elektronische Dokumente und zusammen mit HTML und DOM eine der Kernsprachen
         des World Wide Webs. Sie ist ein sogenannter „living standard“ (lebendiger Standard) und wird vom World Wide Web
         Consortium (W3C) beständig weiterentwickelt. Mit CSS werden Gestaltungsanweisungen erstellt, die vor allem
-        zusammen mit den Auszeichnungssprachen HTML und XML (zum Beispiel bei SVG) eingesetzt werden.</p>
+        zusammen mit den Auszeichnungssprachen HTML und XML (zum Beispiel bei SVG) eingesetzt werden.</p></pre>
       <p> <!--Absatz-->
         <img src="bilder/css.png" alt="CSS-Code"> <!--Bilderquelle + Alternativ Text-->
         CSS wurde entworfen, um Darstellungsvorgaben weitgehend von den
@@ -53,10 +83,26 @@
         eines Dokumentes und die Bedeutung seiner Teile in HTML oder XML beschrieben, während mit CSS gesondert davon,
         vorzugsweise in separaten CSS-Dateien, die Darstellung der Inhalte festgelegt wird (z. B. Layout, Farben und
         Typografie). </p>
+
+        <details>
+          <summary>
+            erstes Element
+          </summary>
+          <summary>zweites Element</summary>
+          <summary>
+            <p>Bin ein text</p>
+          </summary>
+        </details>
     </article>
+
+<!-- InlineElemente (links, Bilder)nehmen Platz ein den sie brauchen
+      Blockelemente !!!!!!-->
+<!-- aside = Randnotizen-->
+
+
   </main>
   <footer> <!--Fußzeile, Impressum, Copy right, weiterführende Links-->
-    <p>© 2019</p>
+    <p>&copy; 2019</p>
   </footer>
 </body>
 
